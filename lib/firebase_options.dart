@@ -25,22 +25,22 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -48,6 +48,14 @@ class DefaultFirebaseOptions {
         );
     }
   }
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyAcY5AjVou70E15bxxLnlNDDPScYKtAFX4',
+    appId: '1:1025629409168:android:1826a7715807e155422d15',
+    messagingSenderId: '1025629409168',
+    projectId: 'dinesh-db340',
+    storageBucket: 'dinesh-db340.firebasestorage.app',
+  );
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBw_9Mrar_-LwM-2nxu4lam4hTStclycNE',
@@ -59,11 +67,4 @@ class DefaultFirebaseOptions {
     measurementId: 'G-2G381V7MHY',
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAcY5AjVou70E15bxxLnlNDDPScYKtAFX4',
-    appId: '1:1025629409168:android:1826a7715807e155422d15',
-    messagingSenderId: '1025629409168',
-    projectId: 'dinesh-db340',
-    storageBucket: 'dinesh-db340.firebasestorage.app',
-  );
 }
